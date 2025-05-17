@@ -1,0 +1,17 @@
+C:\Users\escar\source\repos\Infrastructura\bin\Debug\net8.0\InfrastructuraLayer.deps.json
+C:\Users\escar\source\repos\Infrastructura\bin\Debug\net8.0\InfrastructuraLayer.runtimeconfig.json
+C:\Users\escar\source\repos\Infrastructura\bin\Debug\net8.0\InfrastructuraLayer.dll
+C:\Users\escar\source\repos\Infrastructura\bin\Debug\net8.0\InfrastructuraLayer.pdb
+C:\Users\escar\source\repos\Infrastructura\bin\Debug\net8.0\DomainLayer.dll
+C:\Users\escar\source\repos\Infrastructura\bin\Debug\net8.0\DomainLayer.pdb
+C:\Users\escar\source\repos\Infrastructura\obj\Debug\net8.0\InfrastructuraLayer.csproj.AssemblyReference.cache
+C:\Users\escar\source\repos\Infrastructura\obj\Debug\net8.0\InfrastructuraLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\escar\source\repos\Infrastructura\obj\Debug\net8.0\InfrastructuraLayer.AssemblyInfoInputs.cache
+C:\Users\escar\source\repos\Infrastructura\obj\Debug\net8.0\InfrastructuraLayer.AssemblyInfo.cs
+C:\Users\escar\source\repos\Infrastructura\obj\Debug\net8.0\InfrastructuraLayer.csproj.CoreCompileInputs.cache
+C:\Users\escar\source\repos\Infrastructura\obj\Debug\net8.0\Infrastr.66100155.Up2Date
+C:\Users\escar\source\repos\Infrastructura\obj\Debug\net8.0\InfrastructuraLayer.dll
+C:\Users\escar\source\repos\Infrastructura\obj\Debug\net8.0\refint\InfrastructuraLayer.dll
+C:\Users\escar\source\repos\Infrastructura\obj\Debug\net8.0\InfrastructuraLayer.pdb
+C:\Users\escar\source\repos\Infrastructura\obj\Debug\net8.0\InfrastructuraLayer.genruntimeconfig.cache
+C:\Users\escar\source\repos\Infrastructura\obj\Debug\net8.0\ref\InfrastructuraLayer.dll

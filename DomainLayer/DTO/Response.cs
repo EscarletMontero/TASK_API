@@ -12,12 +12,46 @@ namespace DomainLayer.DTO
         public long EntityId { get; set; }
         public bool Successful { get; set; }
         public string Message { get; set; }
-        public List<string> Errors { get; set; } = new List<string>();
+        public List<string> Errors { get; set; } = new();
+
+        public Response()
+        {
+            Successful = true;
+            Message = "Operación exitosa.";
+        }
+
+        public Response(bool successful, string message)
+        {
+            Successful = successful;
+            Message = message;
+        }
+
+        public Response(bool successful, string message, List<string> errors)
+            : this(successful, message)
+        {
+            Errors = errors;
+        }
     }
 
-    public class Response<T> : Response where T : class
+    public class Response<T> : Response 
     {
-        public IEnumerable<T> DataList { get; set; }
-        public T SingleData { get; set; }
+        public T? SingleData { get; set; }
+        public List<T>? DataList { get; set; }
+
+        public Response() : base() { }
+
+        public Response(bool successful, string message) : base(successful, message) { }
+
+        public Response(bool successful, string message, T singleData)
+            : base(successful, message)
+        {
+            SingleData = singleData;
+        }
+
+        public Response(bool successful, string message, List<T> dataList)
+            : base(successful, message)
+        { 
+            DataList = dataList;
+        }
     }
 }

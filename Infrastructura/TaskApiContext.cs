@@ -17,6 +17,16 @@ namespace InfrastructuraLayer.Context
         }
 
         public DbSet<Tareas> Tarea { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Tareas>()
+                .Property(t => t.DueDate)
+                .HasDefaultValueSql("GETDATE()");
+
+            modelBuilder.Entity<Tareas>()
+                .Property(t => t.Status)
+                .HasDefaultValue("pendiente");
+        }
 
 
     }

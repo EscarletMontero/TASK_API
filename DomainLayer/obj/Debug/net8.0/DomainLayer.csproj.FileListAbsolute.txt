@@ -10,3 +10,16 @@ C:\Users\escar\source\repos\DomainLayer\obj\Debug\net8.0\DomainLayer.dll
 C:\Users\escar\source\repos\DomainLayer\obj\Debug\net8.0\refint\DomainLayer.dll
 C:\Users\escar\source\repos\DomainLayer\obj\Debug\net8.0\DomainLayer.pdb
 C:\Users\escar\source\repos\DomainLayer\obj\Debug\net8.0\ref\DomainLayer.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\DomainLayer\bin\Debug\net8.0\DomainLayer.deps.json
+C:\Users\escar\source\repos\ProyectoAPI_Task\DomainLayer\bin\Debug\net8.0\DomainLayer.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\DomainLayer\bin\Debug\net8.0\DomainLayer.pdb
+C:\Users\escar\source\repos\ProyectoAPI_Task\DomainLayer\obj\Debug\net8.0\DomainLayer.csproj.AssemblyReference.cache
+C:\Users\escar\source\repos\ProyectoAPI_Task\DomainLayer\obj\Debug\net8.0\DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\escar\source\repos\ProyectoAPI_Task\DomainLayer\obj\Debug\net8.0\DomainLayer.AssemblyInfoInputs.cache
+C:\Users\escar\source\repos\ProyectoAPI_Task\DomainLayer\obj\Debug\net8.0\DomainLayer.AssemblyInfo.cs
+C:\Users\escar\source\repos\ProyectoAPI_Task\DomainLayer\obj\Debug\net8.0\DomainLayer.csproj.CoreCompileInputs.cache
+C:\Users\escar\source\repos\ProyectoAPI_Task\DomainLayer\obj\Debug\net8.0\DomainLayer.sourcelink.json
+C:\Users\escar\source\repos\ProyectoAPI_Task\DomainLayer\obj\Debug\net8.0\DomainLayer.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\DomainLayer\obj\Debug\net8.0\refint\DomainLayer.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\DomainLayer\obj\Debug\net8.0\DomainLayer.pdb
+C:\Users\escar\source\repos\ProyectoAPI_Task\DomainLayer\obj\Debug\net8.0\ref\DomainLayer.dll

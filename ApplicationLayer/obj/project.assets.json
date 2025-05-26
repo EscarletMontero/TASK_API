@@ -1457,6 +1457,22 @@
           "lib/netstandard1.3/System.ObjectModel.dll": {}
         }
       },
+      "System.Reactive/6.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "System.Reflection/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -4450,6 +4466,34 @@
         "system.objectmodel.nuspec"
       ]
     },
+    "System.Reactive/6.0.1": {
+      "sha512": "rHaWtKDwCi9qJ3ObKo8LHPMuuwv33YbmQi7TcUK1C264V3MFnOr5Im7QgCTdLniztP3GJyeiSg5x8NqYJFqRmg==",
+      "type": "package",
+      "path": "system.reactive/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net6.0-windows10.0.19041/_._",
+        "build/net6.0/_._",
+        "buildTransitive/net6.0-windows10.0.19041/_._",
+        "buildTransitive/net6.0/_._",
+        "icon.png",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net6.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net6.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net6.0/System.Reactive.dll",
+        "lib/net6.0/System.Reactive.xml",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.18362/System.Reactive.dll",
+        "lib/uap10.0.18362/System.Reactive.pri",
+        "lib/uap10.0.18362/System.Reactive.xml",
+        "readme.md",
+        "system.reactive.6.0.1.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    },
     "System.Reflection/4.1.0": {
       "sha512": "JCKANJ0TI7kzoQzuwB/OoJANy1Lg338B6+JVacPl4TpUwi3cReg3nMLplMq2uqYfHFQpKIlHAUVAJlImZz/4ng==",
       "type": "package",
@@ -6204,7 +6248,8 @@
     "net8.0": [
       "DomainLayer >= 1.0.0",
       "InfrastructuraLayer >= 1.0.0",
-      "Microsoft.AspNetCore.Mvc.Core >= 2.3.0"
+      "Microsoft.AspNetCore.Mvc.Core >= 2.3.0",
+      "System.Reactive >= 6.0.1"
     ]
   },
   "packageFolders": {
@@ -6214,11 +6259,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\escar\\source\\repos\\ApplicationLayer\\ApplicationLayer.csproj",
+      "projectUniqueName": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\ApplicationLayer.csproj",
       "projectName": "ApplicationLayer",
-      "projectPath": "C:\\Users\\escar\\source\\repos\\ApplicationLayer\\ApplicationLayer.csproj",
+      "projectPath": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\ApplicationLayer.csproj",
       "packagesPath": "C:\\Users\\escar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\escar\\source\\repos\\ApplicationLayer\\obj\\",
+      "outputPath": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6239,11 +6284,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\escar\\source\\repos\\DomainLayer\\DomainLayer.csproj": {
-              "projectPath": "C:\\Users\\escar\\source\\repos\\DomainLayer\\DomainLayer.csproj"
+            "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\DomainLayer.csproj": {
+              "projectPath": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\DomainLayer.csproj"
             },
-            "C:\\Users\\escar\\source\\repos\\Infrastructura\\InfrastructuraLayer.csproj": {
-              "projectPath": "C:\\Users\\escar\\source\\repos\\Infrastructura\\InfrastructuraLayer.csproj"
+            "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Infrastructura\\InfrastructuraLayer.csproj": {
+              "projectPath": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Infrastructura\\InfrastructuraLayer.csproj"
             }
           }
         }
@@ -6266,6 +6311,10 @@
           "Microsoft.AspNetCore.Mvc.Core": {
             "target": "Package",
             "version": "[2.3.0, )"
+          },
+          "System.Reactive": {
+            "target": "Package",
+            "version": "[6.0.1, )"
           }
         },
         "imports": [

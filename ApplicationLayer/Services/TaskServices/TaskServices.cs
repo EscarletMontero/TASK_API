@@ -30,7 +30,7 @@ namespace ApplicationLayer.Services.TaskServices
             try
             {
                 var allTasks = await _commonsProcess.GetAllAsync();
-                response.DataList = allTasks;
+                response.DataList = (List<Tareas>?)allTasks;
                 response.Successful = true;
             }
             catch (Exception e)
@@ -68,6 +68,45 @@ namespace ApplicationLayer.Services.TaskServices
         }
 
         /// <summary>
+        /// Agrega una nueva tarea.
+        /// </summary>
+        public async Task<Response<Tareas>> AddAsync(TareasDTO dto)
+        {
+            var response = new Response<Tareas>();
+            try
+            {
+                var tarea = new Tareas
+                {
+                    Description = dto.Description,
+                    AdditionalData = dto.AdditionalData
+                };
+
+                if (!Delegates.ValidarTarea(tarea))
+                {
+                    response.Successful = false;
+                    response.Message = "La tarea no es válida. Verifica la descripción.";
+                    return response;
+                }
+
+                var result = await _commonsProcess.AddAsync(tarea);
+                response.Successful = result.IsSuccess;
+                response.Message = result.Message;
+
+                if (response.Successful)
+                {
+                    response.SingleData = tarea;
+                    Delegates.NotificarEvento($"Tarea agregada: {tarea.Description}");
+                }
+            }
+            catch (Exception ex)
+            {
+                response.Errors.Add(ex.Message);
+            }
+            return response;
+        }
+
+
+        /// <summary>
         /// Actualiza una tarea existente.
         /// </summary>
         public async Task<Response<Tareas>> UpdateAsync(Tareas tarea)
@@ -79,7 +118,6 @@ namespace ApplicationLayer.Services.TaskServices
                 response.Successful = result.IsSuccess;
                 response.Message = result.Message;
                 // Ya no intentamos acceder a UpdatedEntity aqui, ya que la interfaz no lo define.
-                // Si necesitas devolver la entidad actualizada, la interfaz ICommonsProccess deberia incluirla.
             }
             catch (Exception e)
             {
@@ -88,41 +126,6 @@ namespace ApplicationLayer.Services.TaskServices
             return response;
         }
 
-        /// <summary>
-        /// Agrega una nueva tarea.
-        /// </summary>
-        public async Task<Response<Tareas>> AddAsync(string description, DateTime dueDate, string status = "Pendiente", string additionalData = "")
-        {
-            var response = new Response<Tareas>();
-            try
-            {
-                // Crear tarea utilizando la fabrica
-                var tarea = TaskFactory.Create(description, dueDate, status, additionalData);
-
-                if (!Delegates.ValidarTarea(tarea))
-                {
-                    response.Successful = false;
-                    response.Message = "La tarea no es valida. Verifica la descripcion y fecha de vencimiento.";
-                    return response;
-                }
-
-                var result = await _commonsProcess.AddAsync(tarea);
-                response.Successful = result.IsSuccess;
-                response.Message = result.Message;
-                // Ya no intentamos acceder a AddedEntity aqui, ya que la interfaz no lo define.
-                // Si la operacion fue exitosa, la tarea se agrego a la base de datos.
-                if (response.Successful)
-                {
-                    response.SingleData = tarea; // Podemos devolver la tarea que se intento agregar.
-                    Delegates.NotificarEvento($"Tarea agregada: {tarea.Description}");
-                }
-            }
-            catch (Exception ex)
-            {
-                response.Errors.Add(ex.Message);
-            }
-            return response;
-        }
 
         /// <summary>
         /// Elimina una tarea por su Id.
@@ -153,7 +156,7 @@ namespace ApplicationLayer.Services.TaskServices
             {
                 response.Errors.Add(e.Message);
             }
-            return response;
+            return response; 
         }
 
         // LINQ y Delegados
@@ -263,25 +266,5 @@ namespace ApplicationLayer.Services.TaskServices
             return response;
         }
 
-        /// <summary>
-        /// Obtiene las tareas con datos adicionales.
-        /// </summary>
-        public async Task<Response<Tareas>> GetConDatosAdicionalesAsync()
-        {
-            var response = new Response<Tareas>();
-            try
-            {
-                var all = await _commonsProcess.GetAllAsync();
-                response.DataList = all
-                    .Where(t => !string.IsNullOrWhiteSpace(t.AdditionalData))
-                    .ToList();
-                response.Successful = true;
-            }
-            catch (Exception e)
-            {
-                response.Errors.Add(e.Message);
-            }
-            return response;
-        }
     }
 }

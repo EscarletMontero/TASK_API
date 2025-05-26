@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Eqcjz7OU/0=",
+  "dgSpecHash": "enFYqvVqUn4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\escar\\source\\repos\\Proyect_TaskAPI - copia\\Proyect_TaskAPI.csproj",
+  "projectFilePath": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\Proyect_TaskAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\escar\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\escar\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -95,6 +95,7 @@
     "C:\\Users\\escar\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\escar\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\escar\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\escar\\.nuget\\packages\\system.reactive\\6.0.1\\system.reactive.6.0.1.nupkg.sha512",
     "C:\\Users\\escar\\.nuget\\packages\\system.reflection.metadata\\6.0.1\\system.reflection.metadata.6.0.1.nupkg.sha512",
     "C:\\Users\\escar\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\escar\\.nuget\\packages\\system.runtime.caching\\6.0.0\\system.runtime.caching.6.0.0.nupkg.sha512",

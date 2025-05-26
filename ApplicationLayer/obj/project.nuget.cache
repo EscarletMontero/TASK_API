@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U3zg6BZfMRg=",
+  "dgSpecHash": "QsfIPRWIcHI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\escar\\source\\repos\\ApplicationLayer\\ApplicationLayer.csproj",
+  "projectFilePath": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\ApplicationLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\escar\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\escar\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -87,6 +87,7 @@
     "C:\\Users\\escar\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\escar\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\escar\\.nuget\\packages\\system.objectmodel\\4.0.12\\system.objectmodel.4.0.12.nupkg.sha512",
+    "C:\\Users\\escar\\.nuget\\packages\\system.reactive\\6.0.1\\system.reactive.6.0.1.nupkg.sha512",
     "C:\\Users\\escar\\.nuget\\packages\\system.reflection\\4.1.0\\system.reflection.4.1.0.nupkg.sha512",
     "C:\\Users\\escar\\.nuget\\packages\\system.reflection.emit\\4.0.1\\system.reflection.emit.4.0.1.nupkg.sha512",
     "C:\\Users\\escar\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.0.1\\system.reflection.emit.ilgeneration.4.0.1.nupkg.sha512",

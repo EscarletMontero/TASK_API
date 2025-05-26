@@ -21,7 +21,7 @@
   },
   {
     "ContainingType": "Proyect_TaskAPI.Controllers.TareasController",
-    "Method": "AddAsync",
+    "Method": "AddAndEnqueueTaskAsync",
     "RelativePath": "api/Tareas",
     "HttpMethod": "POST",
     "IsController": true,
@@ -151,8 +151,8 @@
   },
   {
     "ContainingType": "Proyect_TaskAPI.Controllers.TareasController",
-    "Method": "GetConDatosAdicionalesAsync",
-    "RelativePath": "api/Tareas/con-adicionales",
+    "Method": "GetPendientesAsync",
+    "RelativePath": "api/Tareas/pendientes",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -171,23 +171,13 @@
   },
   {
     "ContainingType": "Proyect_TaskAPI.Controllers.TareasController",
-    "Method": "GetPendientesAsync",
-    "RelativePath": "api/Tareas/pendientes",
+    "Method": "GetQueueCount",
+    "RelativePath": "api/Tareas/queue/count",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "DomainLayer.DTO.Response\u00601[[DomainLayer.Models.Tareas, DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Proyect_TaskAPI.Controllers.TareasController",

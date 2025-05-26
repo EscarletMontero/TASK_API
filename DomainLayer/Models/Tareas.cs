@@ -1,25 +1,22 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DomainLayer.Models
-{
-    public class Tareas
+    namespace DomainLayer.Models
     {
+        public class Tareas
+        {
+            [Key]
+            [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+            public int Id { get; set; }
+           
+            [Required]
+            public string Description { get; set; }
 
-     [Key]
-     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-     public int Id { get; set; }
-     public string Description { get; set; }
-     public DateTime DueDate { get; set; }
-     public string Status { get; set; }
+            public DateTime DueDate { get; set; } = DateTime.Now; // Por defecto
 
-     public string AdditionalData { get; set; }
+            public string Status { get; set; } = "pendiente"; // Por defecto
 
+            public string AdditionalData { get; set; }
+        }
     }
-}

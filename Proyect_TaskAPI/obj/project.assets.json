@@ -1718,6 +1718,22 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "System.Reactive/6.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "System.Reflection.Metadata/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -2031,7 +2047,8 @@
         "dependencies": {
           "DomainLayer": "1.0.0",
           "InfrastructuraLayer": "1.0.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.3.0"
+          "Microsoft.AspNetCore.Mvc.Core": "2.3.0",
+          "System.Reactive": "6.0.1"
         },
         "compile": {
           "bin/placeholder/ApplicationLayer.dll": {}
@@ -4658,6 +4675,34 @@
         "version.txt"
       ]
     },
+    "System.Reactive/6.0.1": {
+      "sha512": "rHaWtKDwCi9qJ3ObKo8LHPMuuwv33YbmQi7TcUK1C264V3MFnOr5Im7QgCTdLniztP3GJyeiSg5x8NqYJFqRmg==",
+      "type": "package",
+      "path": "system.reactive/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net6.0-windows10.0.19041/_._",
+        "build/net6.0/_._",
+        "buildTransitive/net6.0-windows10.0.19041/_._",
+        "buildTransitive/net6.0/_._",
+        "icon.png",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net6.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net6.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net6.0/System.Reactive.dll",
+        "lib/net6.0/System.Reactive.xml",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.18362/System.Reactive.dll",
+        "lib/uap10.0.18362/System.Reactive.pri",
+        "lib/uap10.0.18362/System.Reactive.xml",
+        "readme.md",
+        "system.reactive.6.0.1.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    },
     "System.Reflection.Metadata/6.0.1": {
       "sha512": "III/lNMSn0ZRBuM9m5Cgbiho5j81u0FAEagFX5ta2DKbljZ3T0IpD8j+BIiHQPeKqJppWS9bGEp6JnKnWKze0g==",
       "type": "package",
@@ -5372,7 +5417,8 @@
       "Microsoft.EntityFrameworkCore >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0",
-      "Swashbuckle.AspNetCore >= 6.6.2"
+      "Swashbuckle.AspNetCore >= 6.6.2",
+      "System.Reactive >= 6.0.1"
     ]
   },
   "packageFolders": {
@@ -5382,11 +5428,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\escar\\source\\repos\\Proyect_TaskAPI - copia\\Proyect_TaskAPI.csproj",
+      "projectUniqueName": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\Proyect_TaskAPI.csproj",
       "projectName": "Proyect_TaskAPI",
-      "projectPath": "C:\\Users\\escar\\source\\repos\\Proyect_TaskAPI - copia\\Proyect_TaskAPI.csproj",
+      "projectPath": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\Proyect_TaskAPI.csproj",
       "packagesPath": "C:\\Users\\escar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\escar\\source\\repos\\Proyect_TaskAPI - copia\\obj\\",
+      "outputPath": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5407,11 +5453,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\escar\\source\\repos\\ApplicationLayer\\ApplicationLayer.csproj": {
-              "projectPath": "C:\\Users\\escar\\source\\repos\\ApplicationLayer\\ApplicationLayer.csproj"
+            "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\ApplicationLayer.csproj": {
+              "projectPath": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\ApplicationLayer.csproj"
             },
-            "C:\\Users\\escar\\source\\repos\\Infrastructura\\InfrastructuraLayer.csproj": {
-              "projectPath": "C:\\Users\\escar\\source\\repos\\Infrastructura\\InfrastructuraLayer.csproj"
+            "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Infrastructura\\InfrastructuraLayer.csproj": {
+              "projectPath": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Infrastructura\\InfrastructuraLayer.csproj"
             }
           }
         }
@@ -5448,6 +5494,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.6.2, )"
+          },
+          "System.Reactive": {
+            "target": "Package",
+            "version": "[6.0.1, )"
           }
         },
         "imports": [

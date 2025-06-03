@@ -151,6 +151,26 @@
   },
   {
     "ContainingType": "Proyect_TaskAPI.Controllers.TareasController",
+    "Method": "GetCompletadasAsync",
+    "RelativePath": "api/Tareas/completadas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DomainLayer.DTO.Response\u00601[[DomainLayer.Models.Tareas, DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Proyect_TaskAPI.Controllers.TareasController",
     "Method": "GetPendientesAsync",
     "RelativePath": "api/Tareas/pendientes",
     "HttpMethod": "GET",
@@ -198,26 +218,6 @@
         "IsRequired": false
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "DomainLayer.DTO.Response\u00601[[DomainLayer.Models.Tareas, DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Proyect_TaskAPI.Controllers.TareasController",
-    "Method": "GetVencidasAsync",
-    "RelativePath": "api/Tareas/vencidas",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "DomainLayer.DTO.Response\u00601[[DomainLayer.Models.Tareas, DomainLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",

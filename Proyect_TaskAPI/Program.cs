@@ -5,7 +5,8 @@ using ApplicationLayer.Services.TaskServices;
 using DomainLayer.Models;
 using InfrastructuraLayer.Repositorio.Commons;
 using InfrastructuraLayer.Repositorio.TaskRepository;
-using ApplicationLayer.Services; 
+using ApplicationLayer.Services;
+using ApplicationLayer.Services.Reactive;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +30,11 @@ builder.Services.AddHostedService<TaskCola>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+//Reactive
+builder.Services.AddSingleton<ReactiveTask>();
+builder.Services.AddSingleton<ITaskQueueService, TaskQueueService>();
+
+
 
 var app = builder.Build();
 

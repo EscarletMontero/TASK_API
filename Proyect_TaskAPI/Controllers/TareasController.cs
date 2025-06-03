@@ -4,7 +4,7 @@ using DomainLayer.DTO;
 using DomainLayer.Models;
 using Microsoft.AspNetCore.Mvc;
 using ApplicationLayer.Services;
-using ApplicationLayer.Services.Reactive;
+using DomainLayer.Memory;
 
 namespace Proyect_TaskAPI.Controllers
 {
@@ -13,14 +13,12 @@ namespace Proyect_TaskAPI.Controllers
     public class TareasController : ControllerBase
     {
         private readonly TaskService _service;
-        private readonly ReactiveTask _reactive; // Servicio que nootifica REACTIVO
-        private readonly ITaskQueueService _tareaQueueService; // Servicio de cola que procesa tareas pendientes
+        private readonly ITaskQueueService _tareaQueueService;
 
-        public TareasController(TaskService service, ITaskQueueService tareaQueueService, ReactiveTask reactiveQueue)
+        public TareasController(TaskService service, ITaskQueueService tareaQueueService)
         {
             _service = service;
             _tareaQueueService = tareaQueueService;
-            _reactive = reactiveQueue;
         }
 
         // GET: api/tareas
@@ -28,56 +26,29 @@ namespace Proyect_TaskAPI.Controllers
         public async Task<ActionResult<Response<Tareas>>> GetAllAsync()
             => await _service.GetAllAsync();
 
+
         // GET: api/tareas/id
         [HttpGet("{id}")]
         public async Task<ActionResult<Response<Tareas>>> GetByIdAsync(int id)
             => await _service.GetByIdAsync(id);
 
         // POST: api/tareas
-        // CREA una nueva tarea, emite evento reactivo, y si es "pendiente" la encola.
         [HttpPost]
-        public async Task<ActionResult<Response<Tareas>>> AddAndEnqueueTaskAsync([FromBody] TareasDTO tareaDTO)
+        public async Task<ActionResult<Response<Tareas>>> AddAsync([FromBody] TareasDTO tareaDTO)
         {
             var response = await _service.AddAsync(tareaDTO);
-
-            if (response.Successful && response.SingleData != null)
-            {
-                // Emite evento de creacion reactiva
-                _reactive.OnTaskCreated(response.SingleData);
-
-                // Encola si el estado sigue siendo "pendiente"
-                if (response.SingleData.Status?.ToLowerInvariant() == "pendiente")
-                {
-                    _tareaQueueService.Enqueue(response.SingleData);
-                }
-
-                return Ok(new Response<Tareas>(true, "Tarea creada y agregada a la cola para procesamiento.", response.SingleData));
-            }
-
+            if (response.Successful) return Ok(response);
             return BadRequest(response);
         }
 
-
-        // PUT: api/tareas
+        // Actualizar: api/tareas
         // Actualiza una tarea, emite reactividad y encola si es "pendiente"
         [HttpPut]
         public async Task<ActionResult<Response<Tareas>>> UpdateAsync(Tareas tarea)
         {
             var response = await _service.UpdateAsync(tarea);
-
-            if (response.Successful && response.SingleData != null)
-            {
-                // Emite evento de actualizacion reactiva
-                _reactive.OnTaskUpdated(response.SingleData);
-
-                // Encola solo si el estado es pendiente
-                if (response.SingleData.Status?.ToLowerInvariant() == "pendiente")
-                {
-                    _tareaQueueService.Enqueue(response.SingleData); // Encola
-                }
-            }
-
-            return response.Successful ? Ok(response) : BadRequest(response);
+            if (response.Successful) return Ok(response);
+            return BadRequest(response);
         }
 
         // DELETE: api/tareas/id
@@ -86,16 +57,11 @@ namespace Proyect_TaskAPI.Controllers
         public async Task<ActionResult<Response<Tareas>>> DeleteAsync(int id)
         {
             var response = await _service.DeleteAsync(id);
-
-            if (response.Successful && response.SingleData != null)
-            {
-                // Emitir evento de eliminacion reactiva
-                _reactive.OnTaskDeleted(response.SingleData); //Notifica la eliminacion
-            }
-
-            return response.Successful ? Ok(response) : BadRequest(response);
+            if (response.Successful) return Ok(response);
+            return BadRequest(response);
         }
 
+ 
         // GET: api/tareas/queue/count
         // Devuelve la cantidad de tareas actualmente en la cola
         [HttpGet("queue/count")]
@@ -117,11 +83,11 @@ namespace Proyect_TaskAPI.Controllers
         public async Task<ActionResult<Response<Tareas>>> GetPendientesAsync()
             => await _service.GetPendientesAsync();
 
-        // GET: api/tareas/vencidas
-        // Devuelve las tareas que ya vencieron
-        [HttpGet("vencidas")]
-        public async Task<ActionResult<Response<Tareas>>> GetVencidasAsync()
-            => await _service.GetVencidasAsync();
+        // GET: api/tareas/completadas
+        // Devuelve solo las tareas con estado "completadas"
+        [HttpGet("completadas")]
+        public async Task<ActionResult<Response<Tareas>>> GetCompletadasAsync()
+            => await _service.GetCompletadasAsync();
 
         // GET: api/tareas/rango?desde=2024-01-01 hasta=2024-12-31
         // Devuelve las tareas en un rango de fechas
@@ -130,10 +96,19 @@ namespace Proyect_TaskAPI.Controllers
             => await _service.GetPorRangoFechaAsync(desde, hasta);
 
         // GET: api/tareas/id/diasrestantes
-        // Devuelve cuantos días faltan para que venza la tarea
         [HttpGet("{id}/diasrestantes")]
         public async Task<ActionResult<Response<string>>> GetDiasRestantesAsync(int id)
             => await _service.GetDiasRestantesAsync(id);
+
+
+
+        //Esto es por si acaso, un borradorsito 
+        [HttpDelete("cache/limpiar")]
+        public IActionResult LimpiarCache()
+        {
+            MemorizacionCache<string, object>.Limpiar(); 
+            return Ok("Cache limpiada exitosamente.");
+        }
 
     }
 }

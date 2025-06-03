@@ -35,25 +35,29 @@ namespace ApplicationLayer.Services
                     var tareaDb = await context.Tarea.FindAsync(tarea.Id);
 
                     // Procesa la tarea si existe y su estado es pendiente
-                    if (tareaDb != null && tareaDb.Status?.ToLowerInvariant() == "pendiente")
-                    {
-                        // Actualiza el estado a en proceso.
-                        tareaDb.Status = "en proceso";
-                        await context.SaveChangesAsync(); // Guardo el cambio en DB.
+                if (tareaDb != null && tareaDb.Status?.ToLowerInvariant() == "pendiente")
+                {
+                    // 3 minutos en pendiente antes de procesarla
+                    await Task.Delay(TimeSpan.FromMinutes(3), stoppingToken);
 
-                        // Simula el procesamiento de la tarea 3 segundos.
-                        await Task.Delay(3000, stoppingToken);
+                    // Cambia a en proceso
+                    tareaDb.Status = "en proceso";
+                    await context.SaveChangesAsync();
 
-                        // Actualiza el estado a completada.
-                        tareaDb.Status = "completada";
-                        await context.SaveChangesAsync(); // Guarda el cambio en DB.
-                    }
+                    // 3 minutos simulando el proceso
+                    await Task.Delay(TimeSpan.FromMinutes(3), stoppingToken);
+
+                    // Cambia a completa
+                    tareaDb.Status = "completada";
+                    await context.SaveChangesAsync();
                 }
+
                 else
                 {
-                    // Si la cola esta vacia, espera 1 segundo antes de revisar de nuevo.
+                    // Si la cola esta vacia, espera 1 segundo antes de verlo de nuevo
                     await Task.Delay(1000, stoppingToken);
                 }
+            }
             }
         }
     }

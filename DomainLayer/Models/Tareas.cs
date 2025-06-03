@@ -13,7 +13,7 @@ using System.ComponentModel.DataAnnotations.Schema;
             [Required]
             public string Description { get; set; }
 
-            public DateTime DueDate { get; set; } = DateTime.Now; // Por defecto
+            public DateTime DueDate { get; set; }
 
             public string Status { get; set; } = "pendiente"; // Por defecto
 

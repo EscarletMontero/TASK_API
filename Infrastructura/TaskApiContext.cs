@@ -20,10 +20,6 @@ namespace InfrastructuraLayer.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Tareas>()
-                .Property(t => t.DueDate)
-                .HasDefaultValueSql("GETDATE()");
-
-            modelBuilder.Entity<Tareas>()
                 .Property(t => t.Status)
                 .HasDefaultValue("pendiente");
         }

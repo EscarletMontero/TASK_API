@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace DomainLayer.DTO
 {
-    // TareasDTO es  un objeto para transferir  datos para comunicar el cliente y la API Controller
+            // TareasDTO es  un objeto para transferir  datos para comunicar el cliente y la API Controller
            public class TareasDTO
         {
             public string Description { get; set; }
-            // No puse DueDate y Status para que el usuario no los envie
-            public string? AdditionalData { get; set; } // Esto puede ser nulo si no se proporciona
-        }
+            // No puse Status para que el usuario no los envie
+            public DateTime DueDate { get; set; }
+
+            public string? AdditionalData { get; set; } // Esto puede ser nulo si no se da
+       
+
+
+
+      }
     }

@@ -42,18 +42,13 @@ namespace DomainLayer.Delegates
             return tareas.Where(t => t.Status?.ToLowerInvariant() == "pendiente").ToList();
         }
 
-        // 7. Metodo para filtrar tareas vencidas
-        public static List<Tareas> FiltrarTareasVencidas(IEnumerable<Tareas> tareas)
-        {
-            return tareas.Where(t =>
-                t.DueDate.Date < DateTime.Now.Date ||
-                t.Status?.ToLower() == "vencida").ToList();
-        }
-
-        // 8. Metodo para filtrar tareas completadas
+        // 7.  Metodo para filtrar tareas completadas
         public static List<Tareas> FiltrarTareasCompletadas(List<Tareas> tareas)
         {
-            return tareas.Where(t => t.Status?.ToLower() == "completed").ToList();
+            return tareas.Where(t => t.Status?.ToLower() == "completada").ToList();
         }
+
+
+
     }
 }

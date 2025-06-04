@@ -21,7 +21,7 @@
   },
   {
     "ContainingType": "Proyect_TaskAPI.Controllers.TareasController",
-    "Method": "AddAndEnqueueTaskAsync",
+    "Method": "AddAsync",
     "RelativePath": "api/Tareas",
     "HttpMethod": "POST",
     "IsController": true,
@@ -148,6 +148,16 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Proyect_TaskAPI.Controllers.TareasController",
+    "Method": "LimpiarCache",
+    "RelativePath": "api/Tareas/cache/limpiar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Proyect_TaskAPI.Controllers.TareasController",

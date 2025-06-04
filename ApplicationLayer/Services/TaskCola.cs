@@ -2,9 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ApplicationLayer.Services
@@ -24,40 +22,33 @@ namespace ApplicationLayer.Services
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                // Para intentar sacar una tarea de la cola
                 if (_queue.TryDequeue(out var tarea))
                 {
-                    // Crea un scope para obtener servicios con un ciclo de vida limitado 
                     using var scope = _scopeFactory.CreateScope();
                     var context = scope.ServiceProvider.GetRequiredService<TaskApiContext>();
 
-                    // Busca la tarea completa en la base de datos
                     var tareaDb = await context.Tarea.FindAsync(tarea.Id);
 
-                    // Procesa la tarea si existe y su estado es pendiente
-                if (tareaDb != null && tareaDb.Status?.ToLowerInvariant() == "pendiente")
-                {
-                    // 3 minutos en pendiente antes de procesarla
-                    await Task.Delay(TimeSpan.FromMinutes(3), stoppingToken);
+                    if (tareaDb != null && tareaDb.Status?.ToLowerInvariant() == "pendiente")
+                    {
+                        // Espera 3 minutos antes de procesar
+                        await Task.Delay(TimeSpan.FromMinutes(3), stoppingToken);
 
-                    // Cambia a en proceso
-                    tareaDb.Status = "en proceso";
-                    await context.SaveChangesAsync();
+                        // Marca como en proceso
+                        tareaDb.Status = "en proceso";
+                        await context.SaveChangesAsync();
 
-                    // 3 minutos simulando el proceso
-                    await Task.Delay(TimeSpan.FromMinutes(3), stoppingToken);
+                        // Simula procesamiento durante 3 minutos
+                        await Task.Delay(TimeSpan.FromMinutes(3), stoppingToken);
 
-                    // Cambia a completa
-                    tareaDb.Status = "completada";
-                    await context.SaveChangesAsync();
+                        // Marca como completada
+                        tareaDb.Status = "completada";
+                        await context.SaveChangesAsync();
+                    }
                 }
 
-                else
-                {
-                    // Si la cola esta vacia, espera 1 segundo antes de verlo de nuevo
-                    await Task.Delay(1000, stoppingToken);
-                }
-            }
+                // Siempre espera 1 segundo entre cada ciclo para evitar sobrecarga
+                await Task.Delay(1000, stoppingToken);
             }
         }
     }

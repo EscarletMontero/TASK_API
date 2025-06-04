@@ -8,10 +8,20 @@ using InfrastructuraLayer.Repositorio.TaskRepository;
 using ApplicationLayer.Services;
 using ApplicationLayer.Services.Reactive;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenLocalhost(5186); // HTTP
+    options.ListenLocalhost(7165, listenOptions =>
+    {
+        listenOptions.UseHttps();
+    });
+});
 
 // Configuro DbContext
 builder.Services.AddDbContext<TaskApiContext>(options =>

@@ -31,15 +31,15 @@ namespace ApplicationLayer.Services
 
                     if (tareaDb != null && tareaDb.Status?.ToLowerInvariant() == "pendiente")
                     {
-                        // Espera 3 minutos antes de procesar
-                        await Task.Delay(TimeSpan.FromMinutes(3), stoppingToken);
+                        // Espera 2 minutos antes de procesar
+                        await Task.Delay(TimeSpan.FromMinutes(2), stoppingToken);
 
                         // Marca como en proceso
                         tareaDb.Status = "en proceso";
                         await context.SaveChangesAsync();
 
-                        // Simula procesamiento durante 3 minutos
-                        await Task.Delay(TimeSpan.FromMinutes(3), stoppingToken);
+                        // Simula procesamiento durante 2 minuto
+                        await Task.Delay(TimeSpan.FromMinutes(2), stoppingToken);
 
                         // Marca como completada
                         tareaDb.Status = "completada";
@@ -47,7 +47,7 @@ namespace ApplicationLayer.Services
                     }
                 }
 
-                // Siempre espera 1 segundo entre cada ciclo para evitar sobrecarga
+                // Aqui para quee espere 1 segundo entre cada ciclo para evitar sobrecarga
                 await Task.Delay(1000, stoppingToken);
             }
         }

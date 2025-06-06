@@ -11,12 +11,12 @@ namespace ApplicationLayer.Services.TaskServices
 {
     public class TaskService
     {
-        // Dependencias inyectadas para el manejo común de procesos, cola de tareas y eventos reactivos.
+        // Dependencias inyectadas cola de tareas y eventos reactivo
         private readonly ICommonsProccess<Tareas> _commonsProcess;
         private readonly ITaskQueueService _queueService;
         private readonly ReactiveTask _reactiveTask;
 
-        // Constructor que inicializa las dependencias.
+        // Constructor que inicializa las dependencias
         public TaskService(
             ICommonsProccess<Tareas> commonsProcess,
             ITaskQueueService queueService,
@@ -26,11 +26,8 @@ namespace ApplicationLayer.Services.TaskServices
             _queueService = queueService;
             _reactiveTask = reactiveTask;
         }
-        /// <summary>
-        /// Obtiene una tarea por su ID.
-        /// </summary>
-        /// <param name="id">El ID de la tarea.</param>
-        /// <returns>Respuesta con la tarea encontrada o mensaje de error.</returns>
+
+        //Obtiene una tarea por su ID.
         public async Task<Response<Tareas>> GetByIdAsync(int id)
         {
             var response = new Response<Tareas>();
@@ -59,19 +56,17 @@ namespace ApplicationLayer.Services.TaskServices
             return response;
         }
 
-        /// <summary>
-        /// Obtiene todas las tareas almacenadas.
-        /// </summary>
-        /// <returns>Respuesta con la lista de tareas o mensaje de error.</returns>
+        // Obtiene todas las tareas almacenadas.
+        
         public async Task<Response<Tareas>> GetAllAsync()
         {
             var response = new Response<Tareas>();
 
             try
             {
-                var result = await _commonsProcess.GetAllAsync();  // IEnumerable<Tareas>
+                var result = await _commonsProcess.GetAllAsync(); 
                 response.Successful = true;
-                response.DataList = result.ToList();  // List<Tareas>
+                response.DataList = result.ToList(); 
                 response.Message = "Lista de tareas obtenida correctamente.";
             }
             catch (Exception ex)
@@ -85,24 +80,22 @@ namespace ApplicationLayer.Services.TaskServices
 
 
 
-        /// <summary>
-        /// Agrega una nueva tarea de forma asíncrona.
-        /// </summary>
-        /// <param name="dto">Objeto de transferencia de datos de la tarea.</param>
-        /// <returns>Objeto de respuesta con el resultado de la operación.</returns>
+     
+        // Add una nueva tarea de forma asincrona.
+        
         public async Task<Response<Tareas>> AddAsync(TareasDTO dto)
         {
             var response = new Response<Tareas>();
 
             try
             {
-                // Crea una nueva instancia de 'Tareas' a partir del DTO.
+                // Crea una nueva instancia de Tareas usando la clase DTO.
                 var tarea = new Tareas
                 {
                     Description = dto.Description,
                     DueDate = dto.DueDate,
-                    Status = "pendiente", // Establece el estado inicial como "pendiente".
-                    AdditionalData = dto.AdditionalData ?? string.Empty // Asigna datos adicionales o una cadena vacía.
+                    Status = "pendiente", // Establece el estado inicial como pendiente
+                    AdditionalData = dto.AdditionalData ?? string.Empty 
                 };
 
                 // Valida la tarea antes de agregarla.
@@ -113,73 +106,65 @@ namespace ApplicationLayer.Services.TaskServices
                     return response;
                 }
 
-                // Intenta agregar la tarea usando el proceso común.
+                // Intenta agregar la tarea
                 var result = await _commonsProcess.AddAsync(tarea);
                 response.Successful = result.IsSuccess;
                 response.Message = result.Message;
 
-                // Si la operación fue exitosa:
                 if (response.Successful)
                 {
-                    response.SingleData = tarea; // Asigna la tarea agregada a la respuesta.
-                    Delegates.NotificarEvento($"Tarea agregada: {tarea.Description}"); // Notifica un evento.
+                    response.SingleData = tarea; 
+                    Delegates.NotificarEvento($"Tarea agregada: {tarea.Description}"); 
 
-                    _reactiveTask.OnTaskCreated(tarea); // Emite un evento reactivo de creación de tarea.
+                    _reactiveTask.OnTaskCreated(tarea); // Emite un evento reactivo de creacion de tarea.
 
-                    // Si el estado es "pendiente", encola la tarea para procesamiento.
+                    // Si el estado es pendiente, encola la tarea para procesamiento.
                     if (tarea.Status?.ToLowerInvariant() == "pendiente")
                         _queueService.Enqueue(tarea);
                 }
             }
             catch (Exception ex)
             {
-                // Captura cualquier excepción y agrega el mensaje de error a la respuesta.
+                // Captura cualquier excepcion y agrega el mensaje de error a la respuesta
                 response.Errors.Add(ex.Message);
             }
 
-            return response; // Devuelve la respuesta.
+            return response; // Devuelve la respuesta
         }
 
-        /// <summary>
-        /// Actualiza una tarea existente de forma asíncrona.
-        /// </summary>
-        /// <param name="tarea">Objeto de la tarea a actualizar.</param>
-        /// <returns>Objeto de respuesta con el resultado de la operación.</returns>
+        // Actualiza una tarea existente de forma asincrona
+        
         public async Task<Response<Tareas>> UpdateAsync(Tareas tarea)
         {
             var response = new Response<Tareas>();
 
             try
             {
-                // Intenta actualizar la tarea usando el proceso común.
+                // Intenta actualizar la tarea 
                 var result = await _commonsProcess.UpdateAsync(tarea);
                 response.Successful = result.IsSuccess;
                 response.Message = result.Message;
 
-                // Si la operación fue exitosa:
                 if (response.Successful)
                 {
-                    _reactiveTask.OnTaskUpdated(tarea); // Emite un evento reactivo de actualización de tarea.
+                    _reactiveTask.OnTaskUpdated(tarea); // Emite un evento reactivo de actualizacion de tarea
 
-                    // Si el estado es "pendiente", encola la tarea.
+                    // Si el estado es pendient, encola la tarea.
                     if (tarea.Status?.ToLowerInvariant() == "pendiente")
                         _queueService.Enqueue(tarea);
                 }
             }
             catch (Exception e)
             {
-                // Captura cualquier excepción y agrega el mensaje de error a la respuesta.
+                // Captura cualquier excepcion y agrega el mensaje de error a la respuest
                 response.Errors.Add(e.Message);
             }
 
-            return response; // Devuelve la respuesta.
+            return response; 
         }
 
-        /// <summary>
-        /// Elimina una tarea por su ID de forma asíncrona.
-        /// </summary>
-        /// <param name="id">El ID de la tarea a eliminar.</param>
-        /// <returns>Objeto de respuesta con el resultado de la operación.</returns>
+        // Elimina una tarea por su ID 
+        
         public async Task<Response<Tareas>> DeleteAsync(int id)
         {
             var response = new Response<Tareas>();
@@ -195,35 +180,31 @@ namespace ApplicationLayer.Services.TaskServices
                     return response;
                 }
 
-                // Intenta eliminar la tarea usando el proceso común.
+                // Intenta eliminar la tarea usando el proceso 
                 var result = await _commonsProcess.DeleteAsync(id);
                 response.Successful = result.IsSuccess;
                 response.Message = result.Message;
 
-                // Si la operación fue exitosa:
                 if (response.Successful)
                 {
                     response.SingleData = tareaToDelete; // Asigna la tarea eliminada a la respuesta.
                     Delegates.NotificarEvento($"Tarea eliminada: {tareaToDelete.Description}"); // Notifica un evento.
 
-                    _reactiveTask.OnTaskDeleted(tareaToDelete); // Emite un evento reactivo de eliminación de tarea.
+                    _reactiveTask.OnTaskDeleted(tareaToDelete); // Emite un evento reactivo de que se elimino tarea.
                 }
             }
             catch (Exception e)
             {
-                // Captura cualquier excepción y agrega el mensaje de error a la respuesta.
                 response.Errors.Add(e.Message);
             }
 
-            return response; // Devuelve la respuesta.
+            return response;
         }
     
 
     // LINQ y Delegados
-
-    /// <summary>
     /// Obtiene las tareas pendientes.
-    /// </summary>
+    
     public async Task<Response<Tareas>> GetPendientesAsync()
         {
             var response = new Response<Tareas>();
@@ -257,9 +238,8 @@ namespace ApplicationLayer.Services.TaskServices
         }
 
 
-        /// <summary>
-        /// Get las tareas completadas.
-        /// </summary>
+        // Get las tareas completadas.
+
         public async Task<Response<Tareas>> GetCompletadasAsync()
         {
             var response = new Response<Tareas>();
@@ -294,9 +274,7 @@ namespace ApplicationLayer.Services.TaskServices
 
 
 
-        /// <summary>
-        /// Obtiene las tareas por rango de fecha de vencimiento.
-        /// </summary>
+        /// Obtiene las tareas por rango de fecha de vencimiento
         public async Task<Response<Tareas>> GetPorRangoFechaAsync(DateTime desde, DateTime hasta)
         {
             var response = new Response<Tareas>();
@@ -332,9 +310,7 @@ namespace ApplicationLayer.Services.TaskServices
         }
 
 
-        /// <summary>
         /// Obtiene los dias restantes para una tarea.
-        /// </summary>
         public async Task<Response<string>> GetDiasRestantesAsync(int tareaId)
         {
             var response = new Response<string>();

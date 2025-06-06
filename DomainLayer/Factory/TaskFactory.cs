@@ -6,14 +6,6 @@ namespace DomainLayer.Factory
 
     public static class TaskFactory
         {
-            /// <summary>
-            /// Crea una nueva tarea con los parametros obligatorios y opcionales.
-            /// </summary>
-            /// <param name="description">Descripcion de la tarea.</param>
-            /// <param name="dueDate">Fecha de vencimiento.</param>
-            /// <param name="status">Estado de la tarea (por defecto "Pendiente").</param>
-            /// <param name="additionalData">Datos adicionales (opcional).</param>
-            /// <returns>Objeto Tareas completamente inicializado.</returns>
             public static Tareas Create(
                 string description,
                 DateTime dueDate,
@@ -45,7 +37,7 @@ namespace DomainLayer.Factory
                     Description = "Demo Task",
                     DueDate = DateTime.Now.AddDays(7),
                     Status = "Pendiente",
-                    AdditionalData = "Tarea generada automaticamente para demostracion."
+                    AdditionalData = "Tarea generada automaticamente para muestra."
                 };
             }
 

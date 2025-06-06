@@ -10,7 +10,7 @@ namespace ApplicationLayer.Services.Reactive
 
         public IObservable<Tareas> TaskStream => _taskSubject;
 
-        // Métodos para notificar acciones en tareas:
+        // Es pa notificar acciones en tareas:
         public void OnTaskCreated(Tareas tarea)
         {
             _taskSubject.OnNext(tarea);
@@ -23,7 +23,6 @@ namespace ApplicationLayer.Services.Reactive
 
         public void OnTaskDeleted(Tareas tarea)
         {
-            // Opcional, según si quieres emitir también al eliminar
             _taskSubject.OnNext(tarea);
         }
 

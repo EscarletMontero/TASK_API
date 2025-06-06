@@ -15,7 +15,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
             public DateTime DueDate { get; set; }
 
-            public string Status { get; set; } = "pendiente"; // Por defecto
+            public string Status { get; set; } = "pendiente"; //Por defaul lo puse
 
             public string AdditionalData { get; set; }
         }

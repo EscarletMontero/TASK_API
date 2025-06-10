@@ -3,8 +3,8 @@ using ApplicationLayer.Services.TaskServices;
 using DomainLayer.DTO;
 using DomainLayer.Models;
 using Microsoft.AspNetCore.Mvc;
-using ApplicationLayer.Services;
 using DomainLayer.Memory;
+using ApplicationLayer.Services.ColaServices;
 
 namespace Proyect_TaskAPI.Controllers
 {
@@ -42,7 +42,7 @@ namespace Proyect_TaskAPI.Controllers
         }
 
         // Actualizar: api/tareas
-        // Actualiza una tarea, emite reactividad y encola si es "pendiente"
+        // Actualiza una tarea, procede a ser reactividad y encola si es pendiente
         [HttpPut]
         public async Task<ActionResult<Response<Tareas>>> UpdateAsync(Tareas tarea)
         {
@@ -63,7 +63,7 @@ namespace Proyect_TaskAPI.Controllers
 
  
         // GET: api/tareas/queue/count
-        // Devuelve la cantidad de tareas actualmente en la cola
+        // Me dara la cantidad de tareas actualmente en la cola
         [HttpGet("queue/count")]
         public IActionResult GetQueueCount()
         {
@@ -78,13 +78,13 @@ namespace Proyect_TaskAPI.Controllers
 
 
         // GET: api/tareas/pendientes
-        // Devuelve solo las tareas con estado "pendiente"
+        // Dara solo las tareas con estado pendiente
         [HttpGet("pendientes")]
         public async Task<ActionResult<Response<Tareas>>> GetPendientesAsync()
             => await _service.GetPendientesAsync();
 
         // GET: api/tareas/completadas
-        // Devuelve solo las tareas con estado "completadas"
+        // Devuelve solo las tareas con estado completadas
         [HttpGet("completadas")]
         public async Task<ActionResult<Response<Tareas>>> GetCompletadasAsync()
             => await _service.GetCompletadasAsync();

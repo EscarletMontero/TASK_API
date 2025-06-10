@@ -3,7 +3,7 @@ using DomainLayer.Models;
 using System.Collections.Concurrent;
 using System.Reactive.Linq;
 
-namespace ApplicationLayer.Services
+namespace ApplicationLayer.Services.ColaServices
 {
     public class TaskQueueService : ITaskQueueService, IDisposable
     {

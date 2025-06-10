@@ -5,8 +5,12 @@ using ApplicationLayer.Services.TaskServices;
 using DomainLayer.Models;
 using InfrastructuraLayer.Repositorio.Commons;
 using InfrastructuraLayer.Repositorio.TaskRepository;
-using ApplicationLayer.Services;
 using ApplicationLayer.Services.Reactive;
+using ApplicationLayer.Services.ColaServices;
+using ApplicationLayer.Services.JwtService;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -43,8 +47,23 @@ builder.Services.AddSwaggerGen();
 //Reactive
 builder.Services.AddSingleton<ReactiveTask>();
 builder.Services.AddSingleton<ITaskQueueService, TaskQueueService>();
+//Servicio para JWT
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Issuer"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+        };
+    });
 
-
+builder.Services.AddScoped<JwtService>();
 
 var app = builder.Build();
 

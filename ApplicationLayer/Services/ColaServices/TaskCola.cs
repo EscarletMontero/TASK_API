@@ -5,7 +5,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ApplicationLayer.Services
+namespace ApplicationLayer.Services.ColaServices
 {
     public class TaskCola : BackgroundService
     {

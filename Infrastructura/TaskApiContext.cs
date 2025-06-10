@@ -17,12 +17,16 @@ namespace InfrastructuraLayer.Context
         }
 
         public DbSet<Tareas> Tarea { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Tareas>()
                 .Property(t => t.Status)
                 .HasDefaultValue("pendiente");
         }
+
+
 
 
     }

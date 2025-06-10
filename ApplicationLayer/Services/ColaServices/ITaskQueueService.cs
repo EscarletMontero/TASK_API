@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ApplicationLayer.Services
+namespace ApplicationLayer.Services.ColaServices
 {
     public interface ITaskQueueService
     {

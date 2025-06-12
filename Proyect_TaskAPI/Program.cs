@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
 using InfrastructuraLayer.Context;
 using ApplicationLayer.Services.TaskServices;

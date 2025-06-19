@@ -298,16 +298,15 @@ C:\Users\escar\source\repos\Proyect_TaskAPI - copia\obj\Debug\net8.0\refint\Proy
 C:\Users\escar\source\repos\Proyect_TaskAPI - copia\obj\Debug\net8.0\Proyect_TaskAPI.pdb
 C:\Users\escar\source\repos\Proyect_TaskAPI - copia\obj\Debug\net8.0\Proyect_TaskAPI.genruntimeconfig.cache
 C:\Users\escar\source\repos\Proyect_TaskAPI - copia\obj\Debug\net8.0\ref\Proyect_TaskAPI.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Proyect_TaskAPI.exe
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\appsettings.json
-C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Proyect_TaskAPI.exe
-C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Proyect_TaskAPI.deps.json
-C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Proyect_TaskAPI.runtimeconfig.json
-C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Proyect_TaskAPI.dll
-C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Proyect_TaskAPI.pdb
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Humanizer.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -337,9 +336,14 @@ C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Mi
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Microsoft.Owin.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Microsoft.Owin.Security.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Owin.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\BouncyCastle.Crypto.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -448,8 +452,3 @@ C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\obj\Debug\net8.0\Pr
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\obj\Debug\net8.0\Proyect_TaskAPI.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\obj\Debug\net8.0\refint\Proyect_TaskAPI.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\obj\Debug\net8.0\Proyect_TaskAPI.pdb
-C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\obj\Debug\net8.0\Proyect_TaskAPI.genruntimeconfig.cache
-C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\obj\Debug\net8.0\ref\Proyect_TaskAPI.dll
-C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
-C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\BouncyCastle.Crypto.dll

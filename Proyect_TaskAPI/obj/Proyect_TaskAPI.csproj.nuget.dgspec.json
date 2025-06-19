@@ -56,9 +56,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNet.SignalR.Core": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.3.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Core": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             },
             "System.Reactive": {
               "target": "Package",
@@ -306,6 +314,10 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Core": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

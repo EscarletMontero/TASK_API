@@ -3,10 +3,10 @@ using DomainLayer.Delegates;
 using DomainLayer.Memory;
 using InfrastructuraLayer.Repositorio.Commons;
 using DomainLayer.DTO;
-using Microsoft.AspNetCore.Mvc;
-using TaskFactory = DomainLayer.Factory.TaskFactory;
 using ApplicationLayer.Services.Reactive;
 using ApplicationLayer.Services.ColaServices;
+using Microsoft.AspNetCore.SignalR;
+using Proyect_TaskAPI.Hubs;
 
 namespace ApplicationLayer.Services.TaskServices
 {
@@ -16,16 +16,19 @@ namespace ApplicationLayer.Services.TaskServices
         private readonly ICommonsProccess<Tareas> _commonsProcess;
         private readonly ITaskQueueService _queueService;
         private readonly ReactiveTask _reactiveTask;
+        private readonly IHubContext<TareaHub> _hubContext;
 
         // Constructor que inicializa las dependencias
         public TaskService(
             ICommonsProccess<Tareas> commonsProcess,
             ITaskQueueService queueService,
-            ReactiveTask reactiveTask)
+            ReactiveTask reactiveTask,
+            IHubContext<TareaHub> hubContext)
         {
             _commonsProcess = commonsProcess;
             _queueService = queueService;
             _reactiveTask = reactiveTask;
+            _hubContext = hubContext;
         }
 
         //Obtiene una tarea por su ID.
@@ -57,7 +60,7 @@ namespace ApplicationLayer.Services.TaskServices
             return response;
         }
 
-        // Obtiene todas las tareas almacenadas.
+        // Para obtener todas las tareas almacenadas.
         
         public async Task<Response<Tareas>> GetAllAsync()
         {
@@ -95,7 +98,7 @@ namespace ApplicationLayer.Services.TaskServices
                 {
                     Description = dto.Description,
                     DueDate = dto.DueDate,
-                    Status = "pendiente", // Establece el estado inicial como pendiente
+                    Status = "pendiente", // Pondra el estado inicial como pendiente
                     AdditionalData = dto.AdditionalData ?? string.Empty 
                 };
 
@@ -115,9 +118,13 @@ namespace ApplicationLayer.Services.TaskServices
                 if (response.Successful)
                 {
                     response.SingleData = tarea; 
-                    Delegates.NotificarEvento($"Tarea agregada: {tarea.Description}"); 
+                    Delegates.NotificarEvento($"Tarea agregada: {tarea.Description}");
 
-                    _reactiveTask.OnTaskCreated(tarea); // Emite un evento reactivo de creacion de tarea.
+                    // evento reactivo para cuando se cree una tarea.
+                    _reactiveTask.OnTaskCreated(tarea); 
+
+                    // Para notificar SignalR
+                    await _hubContext.Clients.All.SendAsync("TareaCreada", tarea);
 
                     // Si el estado es pendiente, encola la tarea para procesamiento.
                     if (tarea.Status?.ToLowerInvariant() == "pendiente")
@@ -130,11 +137,13 @@ namespace ApplicationLayer.Services.TaskServices
                 response.Errors.Add(ex.Message);
             }
 
-            return response; // Devuelve la respuesta
+            return response;
         }
 
+
+
+
         // Actualiza una tarea existente de forma asincrona
-        
         public async Task<Response<Tareas>> UpdateAsync(Tareas tarea)
         {
             var response = new Response<Tareas>();
@@ -148,7 +157,11 @@ namespace ApplicationLayer.Services.TaskServices
 
                 if (response.Successful)
                 {
-                    _reactiveTask.OnTaskUpdated(tarea); // Emite un evento reactivo de actualizacion de tarea
+                    // Emite un evento reactivo de actualizacion de tarea
+                    _reactiveTask.OnTaskUpdated(tarea); 
+
+                    // Para notificar SignalR
+                    await _hubContext.Clients.All.SendAsync("TareaActualizada", tarea);
 
                     // Si el estado es pendient, encola la tarea.
                     if (tarea.Status?.ToLowerInvariant() == "pendiente")
@@ -164,9 +177,15 @@ namespace ApplicationLayer.Services.TaskServices
             return response; 
         }
 
+
+
+
+
+
+
+
         // Elimina una tarea por su ID 
-        
-        public async Task<Response<Tareas>> DeleteAsync(int id)
+          public async Task<Response<Tareas>> DeleteAsync(int id)
         {
             var response = new Response<Tareas>();
 
@@ -204,8 +223,7 @@ namespace ApplicationLayer.Services.TaskServices
     
 
     // LINQ y Delegados
-    /// Obtiene las tareas pendientes.
-    
+    // Obtiene las tareas pendientes.
     public async Task<Response<Tareas>> GetPendientesAsync()
         {
             var response = new Response<Tareas>();
@@ -240,7 +258,6 @@ namespace ApplicationLayer.Services.TaskServices
 
 
         // Get las tareas completadas.
-
         public async Task<Response<Tareas>> GetCompletadasAsync()
         {
             var response = new Response<Tareas>();
@@ -276,7 +293,7 @@ namespace ApplicationLayer.Services.TaskServices
 
 
         /// Obtiene las tareas por rango de fecha de vencimiento
-        public async Task<Response<Tareas>> GetPorRangoFechaAsync(DateTime desde, DateTime hasta)
+       public async Task<Response<Tareas>> GetPorRangoFechaAsync(DateTime desde, DateTime hasta)
         {
             var response = new Response<Tareas>();
 

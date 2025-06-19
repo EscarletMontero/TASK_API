@@ -10,12 +10,15 @@ using ApplicationLayer.Services.JwtService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Proyect_TaskAPI.Hubs;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddSignalR();
+
 
 builder.WebHost.ConfigureKestrel(options =>
 {
@@ -85,5 +88,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHub<TareaHub>("/tareasHub");
 
 app.Run();

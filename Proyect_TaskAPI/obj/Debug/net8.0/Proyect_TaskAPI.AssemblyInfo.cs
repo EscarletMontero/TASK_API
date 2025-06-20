@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Proyect_TaskAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe8b43ba68ae8f36f3946013d58307b701bfdacf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f34cf7bcf8948347d000e5aeb25173298191629")]
 [assembly: System.Reflection.AssemblyProductAttribute("Proyect_TaskAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Proyect_TaskAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

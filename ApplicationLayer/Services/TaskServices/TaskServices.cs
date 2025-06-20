@@ -10,7 +10,7 @@ using Proyect_TaskAPI.Hubs;
 
 namespace ApplicationLayer.Services.TaskServices
 {
-    public class TaskService
+    public class TaskServices
     {
         // Dependencias inyectadas cola de tareas y eventos reactivo
         private readonly ICommonsProccess<Tareas> _commonsProcess;
@@ -19,7 +19,7 @@ namespace ApplicationLayer.Services.TaskServices
         private readonly IHubContext<TareaHub> _hubContext;
 
         // Constructor que inicializa las dependencias
-        public TaskService(
+        public TaskServices(
             ICommonsProccess<Tareas> commonsProcess,
             ITaskQueueService queueService,
             ReactiveTask reactiveTask,

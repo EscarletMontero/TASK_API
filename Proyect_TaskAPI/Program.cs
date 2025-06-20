@@ -37,7 +37,7 @@ builder.Services.AddDbContext<TaskApiContext>(options =>
 
 // Registra los servicios de repositorio y logica de negocio CRUD
 builder.Services.AddScoped<ICommonsProccess<Tareas>, TaskRepository>();
-builder.Services.AddScoped<TaskService>();
+builder.Services.AddScoped<TaskServices>();
 builder.Services.AddSingleton<ITaskQueueService, TaskQueueService>();
 
 // Registre mi TaskCola como un Hosted Service Background Service

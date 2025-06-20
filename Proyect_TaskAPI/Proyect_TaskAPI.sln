@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35431.28
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proyect_TaskAPI", "Proyect_TaskAPI.csproj", "{7B3BA633-853A-41F2-92C0-2DD8B1F17C1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proyect_TaskAPI", "Proyect_TaskAPI.csproj", "{7B3BA633-853A-41F2-92C0-2DD8B1F17C1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationLayer", "..\ApplicationLayer\ApplicationLayer.csproj", "{0C9D7729-6DE6-42FD-9406-3060BFE2336A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationLayer", "..\ApplicationLayer\ApplicationLayer.csproj", "{0C9D7729-6DE6-42FD-9406-3060BFE2336A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLayer", "..\DomainLayer\DomainLayer.csproj", "{CD6C6C22-5078-4412-A570-F1A36F265343}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainLayer", "..\DomainLayer\DomainLayer.csproj", "{CD6C6C22-5078-4412-A570-F1A36F265343}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructuraLayer", "..\Infrastructura\InfrastructuraLayer.csproj", "{45C30902-89EF-407E-83C6-F32AB19D89C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfrastructuraLayer", "..\Infrastructura\InfrastructuraLayer.csproj", "{45C30902-89EF-407E-83C6-F32AB19D89C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_UniqTask", "..\Test_UniqTask\Test_UniqTask.csproj", "{FA711D05-1FA4-4794-A521-8F710DC7C309}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{45C30902-89EF-407E-83C6-F32AB19D89C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45C30902-89EF-407E-83C6-F32AB19D89C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45C30902-89EF-407E-83C6-F32AB19D89C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA711D05-1FA4-4794-A521-8F710DC7C309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA711D05-1FA4-4794-A521-8F710DC7C309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA711D05-1FA4-4794-A521-8F710DC7C309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA711D05-1FA4-4794-A521-8F710DC7C309}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

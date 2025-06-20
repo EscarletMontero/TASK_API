@@ -12,10 +12,10 @@ namespace Proyect_TaskAPI.Controllers
     [ApiController]
     public class TareasController : ControllerBase
     {
-        private readonly TaskService _service;
+        private readonly TaskServices _service;
         private readonly ITaskQueueService _tareaQueueService;
 
-        public TareasController(TaskService service, ITaskQueueService tareaQueueService)
+        public TareasController(TaskServices service, ITaskQueueService tareaQueueService)
         {
             _service = service;
             _tareaQueueService = tareaQueueService;

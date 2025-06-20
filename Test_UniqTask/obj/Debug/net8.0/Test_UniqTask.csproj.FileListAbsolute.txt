@@ -1,0 +1,7 @@
+C:\Users\escar\source\repos\ProyectoAPI_Task\Test_UniqTask\bin\Debug\net8.0\CoverletSourceRootsMapping_Test_UniqTask
+C:\Users\escar\source\repos\ProyectoAPI_Task\Test_UniqTask\obj\Debug\net8.0\Test_UniqTask.csproj.AssemblyReference.cache
+C:\Users\escar\source\repos\ProyectoAPI_Task\Test_UniqTask\obj\Debug\net8.0\Test_UniqTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\escar\source\repos\ProyectoAPI_Task\Test_UniqTask\obj\Debug\net8.0\Test_UniqTask.AssemblyInfoInputs.cache
+C:\Users\escar\source\repos\ProyectoAPI_Task\Test_UniqTask\obj\Debug\net8.0\Test_UniqTask.AssemblyInfo.cs
+C:\Users\escar\source\repos\ProyectoAPI_Task\Test_UniqTask\obj\Debug\net8.0\Test_UniqTask.csproj.CoreCompileInputs.cache
+C:\Users\escar\source\repos\ProyectoAPI_Task\Test_UniqTask\obj\Debug\net8.0\Test_UniqTask.sourcelink.json

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Test_UniqTask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b40a2ac334f32043dc21ff7da35f6b7af0e6d7c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53e7400c760214e1b4602ebfb011e81095c7890d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Test_UniqTask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Test_UniqTask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

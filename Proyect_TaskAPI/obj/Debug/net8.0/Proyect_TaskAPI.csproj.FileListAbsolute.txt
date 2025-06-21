@@ -452,3 +452,9 @@ C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\obj\Debug\net8.0\Pr
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\obj\Debug\net8.0\Proyect_TaskAPI.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\obj\Debug\net8.0\refint\Proyect_TaskAPI.dll
 C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\obj\Debug\net8.0\Proyect_TaskAPI.pdb
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Proyect_TaskAPI.deps.json
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Proyect_TaskAPI.runtimeconfig.json
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Proyect_TaskAPI.dll
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\bin\Debug\net8.0\Proyect_TaskAPI.pdb
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\obj\Debug\net8.0\Proyect_TaskAPI.genruntimeconfig.cache
+C:\Users\escar\source\repos\ProyectoAPI_Task\Proyect_TaskAPI\obj\Debug\net8.0\ref\Proyect_TaskAPI.dll

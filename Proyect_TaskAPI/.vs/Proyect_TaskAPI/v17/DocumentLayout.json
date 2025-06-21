@@ -3,13 +3,47 @@
   "WorkspaceRootPath": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA711D05-1FA4-4794-A521-8F710DC7C309}|..\\Test_UniqTask\\Test_UniqTask.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\test_uniqtask\\test_taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA711D05-1FA4-4794-A521-8F710DC7C309}|..\\Test_UniqTask\\Test_UniqTask.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\test_uniqtask\\test_jwt\\test_jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA711D05-1FA4-4794-A521-8F710DC7C309}|..\\Test_UniqTask\\Test_UniqTask.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\test_uniqtask\\test_queue\\task_queueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA711D05-1FA4-4794-A521-8F710DC7C309}|..\\Test_UniqTask\\Test_UniqTask.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\test_uniqtask\\test_cache\\cachetask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA711D05-1FA4-4794-A521-8F710DC7C309}|..\\Test_UniqTask\\Test_UniqTask.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\test_uniqtask\\test_services\\add_task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA711D05-1FA4-4794-A521-8F710DC7C309}|..\\Test_UniqTask\\Test_UniqTask.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\test_uniqtask\\test_services\\update_task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA711D05-1FA4-4794-A521-8F710DC7C309}|..\\Test_UniqTask\\Test_UniqTask.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\test_uniqtask\\test_delegates\\validartarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD6C6C22-5078-4412-A570-F1A36F265343}|..\\DomainLayer\\DomainLayer.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\domainlayer\\memory\\memorizacioncache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C9D7729-6DE6-42FD-9406-3060BFE2336A}|..\\ApplicationLayer\\ApplicationLayer.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\applicationlayer\\services\\reactive\\reactivetask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FA711D05-1FA4-4794-A521-8F710DC7C309}|..\\Test_UniqTask\\Test_UniqTask.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\test_uniqtask\\test_services\\get_diasrestantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA711D05-1FA4-4794-A521-8F710DC7C309}|..\\Test_UniqTask\\Test_UniqTask.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\test_uniqtask\\test_services\\get_taskporrangofecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA711D05-1FA4-4794-A521-8F710DC7C309}|..\\Test_UniqTask\\Test_UniqTask.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\test_uniqtask\\test_services\\get_taskcompletadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA711D05-1FA4-4794-A521-8F710DC7C309}|..\\Test_UniqTask\\Test_UniqTask.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\test_uniqtask\\test_services\\base\\taskservice_base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C9D7729-6DE6-42FD-9406-3060BFE2336A}|..\\ApplicationLayer\\ApplicationLayer.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\applicationlayer\\services\\taskservices\\taskservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3BA633-853A-41F2-92C0-2DD8B1F17C1B}|Proyect_TaskAPI.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\proyect_taskapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3BA633-853A-41F2-92C0-2DD8B1F17C1B}|Proyect_TaskAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C9D7729-6DE6-42FD-9406-3060BFE2336A}|..\\ApplicationLayer\\ApplicationLayer.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\applicationlayer\\services\\colaservices\\taskcola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -31,10 +65,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD6C6C22-5078-4412-A570-F1A36F265343}|..\\DomainLayer\\DomainLayer.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\domainlayer\\models\\tareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B3BA633-853A-41F2-92C0-2DD8B1F17C1B}|Proyect_TaskAPI.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\proyect_taskapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B3BA633-853A-41F2-92C0-2DD8B1F17C1B}|Proyect_TaskAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45C30902-89EF-407E-83C6-F32AB19D89C9}|..\\Infrastructura\\InfrastructuraLayer.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\infrastructura\\taskapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -64,9 +94,6 @@
       "AbsoluteMoniker": "D:0:0:{CD6C6C22-5078-4412-A570-F1A36F265343}|..\\DomainLayer\\DomainLayer.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\domainlayer\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C9D7729-6DE6-42FD-9406-3060BFE2336A}|..\\ApplicationLayer\\ApplicationLayer.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\applicationlayer\\services\\jwtservice\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0C9D7729-6DE6-42FD-9406-3060BFE2336A}|..\\ApplicationLayer\\ApplicationLayer.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\applicationlayer\\services\\colaservices\\itaskqueueservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -74,9 +101,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD6C6C22-5078-4412-A570-F1A36F265343}|..\\DomainLayer\\DomainLayer.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\domainlayer\\factory\\taskfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD6C6C22-5078-4412-A570-F1A36F265343}|..\\DomainLayer\\DomainLayer.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\domainlayer\\memory\\memorizacioncache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B3BA633-853A-41F2-92C0-2DD8B1F17C1B}|Proyect_TaskAPI.csproj|c:\\users\\escar\\source\\repos\\proyectoapi_task\\proyect_taskapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -121,50 +145,206 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Task_QueueService.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Queue\\Task_QueueService.cs",
+              "RelativeDocumentMoniker": "..\\Test_UniqTask\\Test_Queue\\Task_QueueService.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Queue\\Task_QueueService.cs",
+              "RelativeToolTip": "..\\Test_UniqTask\\Test_Queue\\Task_QueueService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T05:01:43.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CacheTask.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Cache\\CacheTask.cs",
+              "RelativeDocumentMoniker": "..\\Test_UniqTask\\Test_Cache\\CacheTask.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Cache\\CacheTask.cs",
+              "RelativeToolTip": "..\\Test_UniqTask\\Test_Cache\\CacheTask.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T04:59:06.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ValidarTarea.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Delegates\\ValidarTarea.cs",
+              "RelativeDocumentMoniker": "..\\Test_UniqTask\\Test_Delegates\\ValidarTarea.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Delegates\\ValidarTarea.cs",
+              "RelativeToolTip": "..\\Test_UniqTask\\Test_Delegates\\ValidarTarea.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T15:22:25.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Update_Task.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Services\\Update_Task.cs",
+              "RelativeDocumentMoniker": "..\\Test_UniqTask\\Test_Services\\Update_Task.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Services\\Update_Task.cs",
+              "RelativeToolTip": "..\\Test_UniqTask\\Test_Services\\Update_Task.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T15:42:49.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Add_Task.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Services\\Add_Task.cs",
+              "RelativeDocumentMoniker": "..\\Test_UniqTask\\Test_Services\\Add_Task.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Services\\Add_Task.cs",
+              "RelativeToolTip": "..\\Test_UniqTask\\Test_Services\\Add_Task.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T15:37:21.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Test_TaskService.cs",
-              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_TaskService.cs",
-              "RelativeDocumentMoniker": "..\\Test_UniqTask\\Test_TaskService.cs",
-              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_TaskService.cs",
-              "RelativeToolTip": "..\\Test_UniqTask\\Test_TaskService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswBcAAAAAAAAAAAAAAA==",
+              "Title": "Test_JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Jwt\\Test_JwtService.cs",
+              "RelativeDocumentMoniker": "..\\Test_UniqTask\\Test_Jwt\\Test_JwtService.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Jwt\\Test_JwtService.cs",
+              "RelativeToolTip": "..\\Test_UniqTask\\Test_Jwt\\Test_JwtService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T15:19:40.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReactiveTask.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\Reactive\\ReactiveTask.cs",
+              "RelativeDocumentMoniker": "..\\ApplicationLayer\\Services\\Reactive\\ReactiveTask.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\Reactive\\ReactiveTask.cs",
+              "RelativeToolTip": "..\\ApplicationLayer\\Services\\Reactive\\ReactiveTask.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T13:15:16.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Get_DiasRestantes.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Services\\Get_DiasRestantes.cs",
+              "RelativeDocumentMoniker": "..\\Test_UniqTask\\Test_Services\\Get_DiasRestantes.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Services\\Get_DiasRestantes.cs",
+              "RelativeToolTip": "..\\Test_UniqTask\\Test_Services\\Get_DiasRestantes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T18:27:38.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Get_TaskPorRangoFecha.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Services\\Get_TaskPorRangoFecha.cs",
+              "RelativeDocumentMoniker": "..\\Test_UniqTask\\Test_Services\\Get_TaskPorRangoFecha.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Services\\Get_TaskPorRangoFecha.cs",
+              "RelativeToolTip": "..\\Test_UniqTask\\Test_Services\\Get_TaskPorRangoFecha.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T18:25:36.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MemorizacionCache.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\Memory\\MemorizacionCache.cs",
+              "RelativeDocumentMoniker": "..\\DomainLayer\\Memory\\MemorizacionCache.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\Memory\\MemorizacionCache.cs",
+              "RelativeToolTip": "..\\DomainLayer\\Memory\\MemorizacionCache.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T19:11:16.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Get_TaskCompletadas.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Services\\Get_TaskCompletadas.cs",
+              "RelativeDocumentMoniker": "..\\Test_UniqTask\\Test_Services\\Get_TaskCompletadas.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Services\\Get_TaskCompletadas.cs",
+              "RelativeToolTip": "..\\Test_UniqTask\\Test_Services\\Get_TaskCompletadas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T14:07:24.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ICommonsProccess.cs",
-              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Infrastructura\\Repositorio\\Commons\\ICommonsProccess.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructura\\Repositorio\\Commons\\ICommonsProccess.cs",
-              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Infrastructura\\Repositorio\\Commons\\ICommonsProccess.cs",
-              "RelativeToolTip": "..\\Infrastructura\\Repositorio\\Commons\\ICommonsProccess.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "TaskService_Base.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Services\\Base\\TaskService_Base.cs",
+              "RelativeDocumentMoniker": "..\\Test_UniqTask\\Test_Services\\Base\\TaskService_Base.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Test_UniqTask\\Test_Services\\Base\\TaskService_Base.cs",
+              "RelativeToolTip": "..\\Test_UniqTask\\Test_Services\\Base\\TaskService_Base.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T14:02:44.563Z",
+              "WhenOpened": "2025-06-20T15:41:51.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Test_Delegate.cs",
-              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Unit_TestTask\\Test_Delegate.cs",
-              "RelativeDocumentMoniker": "..\\Unit_TestTask\\Test_Delegate.cs",
-              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Unit_TestTask\\Test_Delegate.cs",
-              "RelativeToolTip": "..\\Unit_TestTask\\Test_Delegate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "TaskServices.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\TaskServices\\TaskServices.cs",
+              "RelativeDocumentMoniker": "..\\ApplicationLayer\\Services\\TaskServices\\TaskServices.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\TaskServices\\TaskServices.cs",
+              "RelativeToolTip": "..\\ApplicationLayer\\Services\\TaskServices\\TaskServices.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAIwH4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T13:03:38.942Z",
+              "WhenOpened": "2025-05-26T17:30:59.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
+              "Title": "Tareas.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\Models\\Tareas.cs",
+              "RelativeDocumentMoniker": "..\\DomainLayer\\Models\\Tareas.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\Models\\Tareas.cs",
+              "RelativeToolTip": "..\\DomainLayer\\Models\\Tareas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T03:01:07.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAwwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T17:57:35.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Delegates.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\Delegates\\Delegates.cs",
               "RelativeDocumentMoniker": "..\\DomainLayer\\Delegates\\Delegates.cs",
@@ -177,45 +357,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReactiveTask.cs",
-              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\Reactive\\ReactiveTask.cs",
-              "RelativeDocumentMoniker": "..\\ApplicationLayer\\Services\\Reactive\\ReactiveTask.cs",
-              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\Reactive\\ReactiveTask.cs",
-              "RelativeToolTip": "..\\ApplicationLayer\\Services\\Reactive\\ReactiveTask.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "Test_Delegate.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Unit_TestTask\\Test_Delegate.cs",
+              "RelativeDocumentMoniker": "..\\Unit_TestTask\\Test_Delegate.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Unit_TestTask\\Test_Delegate.cs",
+              "RelativeToolTip": "..\\Unit_TestTask\\Test_Delegate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T13:15:16.055Z",
+              "WhenOpened": "2025-06-20T13:03:38.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TaskServices.cs",
-              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\TaskServices\\TaskServices.cs",
-              "RelativeDocumentMoniker": "..\\ApplicationLayer\\Services\\TaskServices\\TaskServices.cs",
-              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\TaskServices\\TaskServices.cs",
-              "RelativeToolTip": "..\\ApplicationLayer\\Services\\TaskServices\\TaskServices.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAiwGkBAAArAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "ICommonsProccess.cs",
+              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Infrastructura\\Repositorio\\Commons\\ICommonsProccess.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructura\\Repositorio\\Commons\\ICommonsProccess.cs",
+              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Infrastructura\\Repositorio\\Commons\\ICommonsProccess.cs",
+              "RelativeToolTip": "..\\Infrastructura\\Repositorio\\Commons\\ICommonsProccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:30:59.753Z",
+              "WhenOpened": "2025-06-20T14:02:44.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Tareas.cs",
-              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\Models\\Tareas.cs",
-              "RelativeDocumentMoniker": "..\\DomainLayer\\Models\\Tareas.cs",
-              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\Models\\Tareas.cs",
-              "RelativeToolTip": "..\\DomainLayer\\Models\\Tareas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T03:01:07.087Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "TaskQueueService.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\ColaServices\\TaskQueueService.cs",
               "RelativeDocumentMoniker": "..\\ApplicationLayer\\Services\\ColaServices\\TaskQueueService.cs",
@@ -228,20 +396,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "TaskCola.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\ColaServices\\TaskCola.cs",
               "RelativeDocumentMoniker": "..\\ApplicationLayer\\Services\\ColaServices\\TaskCola.cs",
               "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\ColaServices\\TaskCola.cs",
               "RelativeToolTip": "..\\ApplicationLayer\\Services\\ColaServices\\TaskCola.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAADEAAABaAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAIBJwDEAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-24T03:16:09.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -249,24 +417,12 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-03T02:42:57.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAwwF4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T17:57:35.455Z",
+              "WhenOpened": "2025-05-03T02:42:57.901Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "TaskApiContext.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Infrastructura\\TaskApiContext.cs",
               "RelativeDocumentMoniker": "..\\Infrastructura\\TaskApiContext.cs",
@@ -274,11 +430,12 @@
               "RelativeToolTip": "..\\Infrastructura\\TaskApiContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T02:50:48.096Z"
+              "WhenOpened": "2025-05-24T02:50:48.096Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "AuthController .cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\Controllers\\AuthController .cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController .cs",
@@ -286,11 +443,12 @@
               "RelativeToolTip": "Controllers\\AuthController .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T00:13:25.701Z"
+              "WhenOpened": "2025-06-10T00:13:25.701Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "TareasDTO.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\DTO\\TareasDTO.cs",
               "RelativeDocumentMoniker": "..\\DomainLayer\\DTO\\TareasDTO.cs",
@@ -303,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 42,
               "Title": "Test_Services.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Unit_TestTask\\Test_Services.cs",
               "RelativeDocumentMoniker": "..\\Unit_TestTask\\Test_Services.cs",
@@ -311,11 +469,12 @@
               "RelativeToolTip": "..\\Unit_TestTask\\Test_Services.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T13:05:38.509Z"
+              "WhenOpened": "2025-06-20T13:05:38.509Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 24,
               "Title": "UsuarioDTO.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\DTO\\UsuarioDTO.cs",
               "RelativeDocumentMoniker": "..\\DomainLayer\\DTO\\UsuarioDTO.cs",
@@ -323,11 +482,12 @@
               "RelativeToolTip": "..\\DomainLayer\\DTO\\UsuarioDTO.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T00:21:59.801Z"
+              "WhenOpened": "2025-06-10T00:21:59.801Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 25,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\DTO\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "..\\DomainLayer\\DTO\\RegisterRequest.cs",
@@ -335,11 +495,12 @@
               "RelativeToolTip": "..\\DomainLayer\\DTO\\RegisterRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T23:33:23.334Z"
+              "WhenOpened": "2025-06-09T23:33:23.334Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 27,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\DTO\\LoginRequest.cs",
               "RelativeDocumentMoniker": "..\\DomainLayer\\DTO\\LoginRequest.cs",
@@ -347,11 +508,12 @@
               "RelativeToolTip": "..\\DomainLayer\\DTO\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T23:33:40.206Z"
+              "WhenOpened": "2025-06-09T23:33:40.206Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 28,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "..\\DomainLayer\\Models\\Usuario.cs",
@@ -359,36 +521,25 @@
               "RelativeToolTip": "..\\DomainLayer\\Models\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T23:26:05.549Z"
+              "WhenOpened": "2025-06-09T23:26:05.549Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 26,
               "Title": "TareasController.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\Controllers\\TareasController.cs",
               "RelativeDocumentMoniker": "Controllers\\TareasController.cs",
               "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\Controllers\\TareasController.cs",
               "RelativeToolTip": "Controllers\\TareasController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAywG4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAADwv24AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-03T02:19:31.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "JwtService.cs",
-              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\JwtService\\JwtService.cs",
-              "RelativeDocumentMoniker": "..\\ApplicationLayer\\Services\\JwtService\\JwtService.cs",
-              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\JwtService\\JwtService.cs",
-              "RelativeToolTip": "..\\ApplicationLayer\\Services\\JwtService\\JwtService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwC0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T23:41:45.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 29,
               "Title": "ITaskQueueService.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\ApplicationLayer\\Services\\ColaServices\\ITaskQueueService.cs",
               "RelativeDocumentMoniker": "..\\ApplicationLayer\\Services\\ColaServices\\ITaskQueueService.cs",
@@ -396,11 +547,12 @@
               "RelativeToolTip": "..\\ApplicationLayer\\Services\\ColaServices\\ITaskQueueService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T03:02:50.659Z"
+              "WhenOpened": "2025-05-24T03:02:50.659Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "Response.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\DTO\\Response.cs",
               "RelativeDocumentMoniker": "..\\DomainLayer\\DTO\\Response.cs",
@@ -408,11 +560,12 @@
               "RelativeToolTip": "..\\DomainLayer\\DTO\\Response.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T03:48:22.203Z"
+              "WhenOpened": "2025-05-24T03:48:22.203Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 31,
               "Title": "TaskFactory.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\Factory\\TaskFactory.cs",
               "RelativeDocumentMoniker": "..\\DomainLayer\\Factory\\TaskFactory.cs",
@@ -420,23 +573,12 @@
               "RelativeToolTip": "..\\DomainLayer\\Factory\\TaskFactory.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwCAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T02:20:10.656Z"
+              "WhenOpened": "2025-06-06T02:20:10.656Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "MemorizacionCache.cs",
-              "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\Memory\\MemorizacionCache.cs",
-              "RelativeDocumentMoniker": "..\\DomainLayer\\Memory\\MemorizacionCache.cs",
-              "ToolTip": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\DomainLayer\\Memory\\MemorizacionCache.cs",
-              "RelativeToolTip": "..\\DomainLayer\\Memory\\MemorizacionCache.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T19:11:16.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -444,11 +586,12 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAA4AAAAAAAAAAAAcwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-04T01:37:29.529Z"
+              "WhenOpened": "2025-06-04T01:37:29.529Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 33,
               "Title": "20250526194708_UpdateTareasDefaults.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Infrastructura\\Migrations\\20250526194708_UpdateTareasDefaults.cs",
               "RelativeDocumentMoniker": "..\\Infrastructura\\Migrations\\20250526194708_UpdateTareasDefaults.cs",
@@ -456,11 +599,12 @@
               "RelativeToolTip": "..\\Infrastructura\\Migrations\\20250526194708_UpdateTareasDefaults.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T19:47:10.902Z"
+              "WhenOpened": "2025-05-26T19:47:10.902Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 36,
               "Title": "Response.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\DomainLayer\\DTO\\Response.cs",
               "RelativeDocumentMoniker": "..\\..\\DomainLayer\\DTO\\Response.cs",
@@ -471,7 +615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 37,
               "Title": "Delegates.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\DomainLayer\\Delegates\\Delegates.cs",
               "RelativeDocumentMoniker": "..\\..\\DomainLayer\\Delegates\\Delegates.cs",
@@ -482,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 35,
               "Title": "TareasDTO.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\DomainLayer\\DTO\\TareasDTO.cs",
               "RelativeDocumentMoniker": "..\\..\\DomainLayer\\DTO\\TareasDTO.cs",
@@ -493,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 38,
               "Title": "ICommonsProccess.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\Infrastructura\\Repositorio\\Commons\\ICommonsProccess.cs",
               "RelativeDocumentMoniker": "..\\..\\Infrastructura\\Repositorio\\Commons\\ICommonsProccess.cs",
@@ -504,7 +648,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 39,
               "Title": "TaskServices.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ApplicationLayer\\Services\\TaskServices\\TaskServices.cs",
               "RelativeDocumentMoniker": "..\\..\\ApplicationLayer\\Services\\TaskServices\\TaskServices.cs",
@@ -515,7 +659,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 40,
               "Title": "TaskRepository.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\Infrastructura\\Repositorio\\TaskRepository\\TaskRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\Infrastructura\\Repositorio\\TaskRepository\\TaskRepository.cs",
@@ -526,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 34,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\ProyectoAPI_Task\\Proyect_TaskAPI\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
@@ -534,11 +678,12 @@
               "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T00:49:31.067Z"
+              "WhenOpened": "2025-05-16T00:49:31.067Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 41,
               "Title": "20250503025024_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\escar\\source\\repos\\Infrastructura\\Migrations\\20250503025024_InitialCreate.cs",
               "RelativeDocumentMoniker": "..\\..\\Infrastructura\\Migrations\\20250503025024_InitialCreate.cs",
